@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letter Practice | TypeMaster</title>
+  <link rel="stylesheet" href="practice.css"><!-- identical to practice.css for now -->
+</head>
+<body>
+  <div class="container">
+    <section class="left">
+      <h2>Type the letter before time runs out!</h2>
+      <div id="display"></div>
+      <input id="hiddenInput" type="text" autocomplete="off" spellcheck="false" placeholder="Start typing…">
+      <p>⏱ Time left: <span id="timer">0.0</span>s</p>
+    </section>
+    <aside class="right">
+      <h3>Difficulty</h3>
+      <label class="mode"><input type="radio" name="mode" value="easy" checked> Easy (1.5 s)</label>
+      <label class="mode"><input type="radio" name="mode" value="normal"> Normal (1 s)</label>
+      <label class="mode"><input type="radio" name="mode" value="hard"> Hard (0.5 s)</label>
+      <label class="mode"><input type="radio" name="mode" value="custom"> Custom</label>
+      <div id="customBox" class="mode">
+          <input id="custom" type="number" min="0.2" max="5" step="0.1" value="1"> s
+      </div>
+      <button id="startBtn">Start</button>
+    </aside>
+  </div>
+  <script src="letter.js"></script>
+</body>
+</html>
